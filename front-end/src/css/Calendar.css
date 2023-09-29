@@ -1,0 +1,127 @@
+
+  .demo-app {
+    display: flex;
+    min-height: 100%;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+  .demo-app-sidebar {
+    width: 300px;
+    line-height: 1.5;
+    background: #eaf9ff;
+    border-right: 1px solid #d3e2e8;
+  }
+  
+  .demo-app-sidebar-section {
+    padding: 2em;
+  }
+  
+  .demo-app-main {
+    flex-grow: 1;
+    padding: 3em;
+  }
+  
+  .fc { /* the calendar root */
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .fc-daygrid-event {
+    border: black 1px solid;
+  }
+
+  .fc-direction-ltr .fc-daygrid-event.fc-event-end, .fc-direction-rtl .fc-daygrid-event.fc-event-start {
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+  }
+
+  .fc-timegrid-event .fc-event-main { 
+    padding: 0px !important;
+  }
+
+
+  
+  .fc-event-main {
+    display: block;
+    color: white !important;
+}
+
+.fc-daygrid-dot-event {
+  padding: 0px !important;
+}
+
+.fc-bg-event {
+  opacity: 0.9;
+}
+
+.fc-event {
+    background-color: var(--light-blue);
+    display: block; 
+    color: white !important;
+}
+
+.modal-background {
+    display: flex;
+    background-color: rgba(0 0 0 / 70%);
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal-window {
+  background-color: white;
+  border-radius: 2px;
+  height: 200px;
+  width: 350px;
+  background-color: #FEFEFE;
+  animation: fadeIn 1s, slideIn .8s linear;
+  margin: auto;
+  box-shadow: 0px 0px 30px hsl(0, 0%, 60%);
+  position: fixed;
+}
+
+.fc-v-event, .fc-h-event {
+  border: solid 1px black;
+  display: block; 
+  color: white !important;
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(400px);
+      animation-timing-function: ease-out;
+    }
+    60% {
+      transform: translateY(-30px);
+      animation-timing-function: ease-in;
+    }
+    80% {
+      transform: translateY(10px);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: translateY(0px);
+      animation-timing-function: ease-in;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .form-border-color {
+    border-color: #C5D2D9;
+  }
+

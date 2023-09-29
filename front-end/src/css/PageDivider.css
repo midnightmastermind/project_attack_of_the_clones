@@ -1,0 +1,11 @@
+.flipped {
+    transform: rotate(180deg) !important;
+}
+
+.shape-divider svg {
+    width: calc(100% + 1.3px);
+}
+
+.shape-divider .shape-fill {
+    fill: white;
+}

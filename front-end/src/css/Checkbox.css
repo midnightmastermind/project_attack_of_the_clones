@@ -1,0 +1,53 @@
+/* Styling for Checkbox component
+Allows for specific styling when checkbox is selected vs. not */
+
+/* styles input element that is descendant of className checkbox (aka the box itself) */
+.checkbox input[type='checkbox'] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 0.15rem;
+    margin-right: 0.5rem;
+    border: 0.125rem solid var(--dark-blue);
+    outline: none;
+    cursor: pointer
+}
+
+/* style only applied when box is checked */
+input.checked {
+    position: relative;
+    box-shadow: 0 0 0.9375rem 0.3125rem var(--clicked-mentor-blue)
+}
+
+/* styles the checkmark */
+input.checked::before {
+    content: url('../../public/checkmark.png'); 
+    font-size: 2rem;
+    position: absolute;
+    right: -0.75rem; /* -12px */
+}
+
+/* styles the checkmark on medium sized screens & larger */
+@media screen and (min-width: 640px) {
+    input.checked::before {
+        top: -1.125rem; /* -18px */
+    }
+}
+
+/* styles the checkmark on small sized screens */
+@media screen and (max-width: 639px) {
+    input.checked::before {
+        top: -1rem; /* -16px */
+    }
+}
+
+/* styles a disabled checkbox (grays it out) */
+.checkbox input[type="checkbox"]:disabled + span {
+    color: #c0c0c0;
+}
+
+span::before {
+    content: '';
+    position: absolute
+}

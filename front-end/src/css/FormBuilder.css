@@ -1,0 +1,15 @@
+.react-form-builder > div {
+    display: flex;
+}
+
+.react-form-builder-preview {
+    width: 75% !important;
+}
+
+.react-form-builder-toolbar {
+    width: 25% !important;
+}
+
+.SortableItem {
+    min-height: 100px;
+}

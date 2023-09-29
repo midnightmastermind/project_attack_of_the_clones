@@ -1,0 +1,15 @@
+.create-object-container {
+    height: 100%;
+    margin-top: 50px;
+}
+
+.create-object-container .submit-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.create-object-container .submit-form-header {
+    font-size: 2rem;
+}
